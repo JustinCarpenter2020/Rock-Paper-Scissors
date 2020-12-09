@@ -10,20 +10,26 @@
 </head>
 
 <body>
+  <nav class="navbar navbar bg-danger">
+  </nav>
   <header class="container-fluid">
     <div class="row backimg"></div>
-
     </div>
   </header>
 
-  <main class="conatiner-fluid">
-    <row class="game">
+  <main class="conatiner">
+    <row class="justify-content-around">
       <col-4><button onclick="play('rock')" class="btn btn-dark">Rock</button></col-4>
+    </row>
+
+    <row class="container paper">
       <col-4><button onclick="play('paper')" class="btn btn-light">Paper</button></col-4>
+    </row>
+
+    <row class="container scissors">
       <col-4><button onclick="play('scissors')" class="btn btn-danger">Scissors</button></col-4>
     </row>
   </main>
-
 
   <script src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -15,10 +15,10 @@ function player(play) {
 const choices = ["Rock", "Paper", "Scissors"]
 function computer() {
     let computerSelection = choices[Math.floor(Math.random() * Math.floor(choices.length))]
+    console.log(computerSelection)
     return computerSelection
 }
 
-const computerSelection = computer()
 
 function play(playerSelection, computerSelection) {
   player()
