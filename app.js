@@ -12,15 +12,17 @@ function player(play) {
 
 
 
-const choices = ["Rock", "Paper", "Scissors"];
-
+const choices = ["Rock", "Paper", "Scissors"]
 function computer() {
-  choices[Math.floor(Math.random() * Math.floor(choices.length))]S
+    let computerSelection = choices[Math.floor(Math.random() * Math.floor(choices.length))]
+    return computerSelection
 }
 
-const computerSelection = computer();
+const computerSelection = computer()
 
 function play(playerSelection, computerSelection) {
+  player()
+
   if (playerSelection == 'Rock' && computerSelection === 'Scissors' || playerSelection == 'Paper' && computerSelection === 'Rock' || playerSelection == 'Scissors' && computerSelection === 'Paper') {
     return "Victory!!";
   } else if (playerSelection == 'Rock' && computerSelection === 'Paper' || playerSelection == 'Paper' && computerSelection === 'Scissors' || playerSelection == 'Scissors' && computerSelection === 'Rock') {
@@ -32,4 +34,3 @@ function play(playerSelection, computerSelection) {
   console.log("Computer chooses: " + computerSelection);
   console.log(play())
 }
-
